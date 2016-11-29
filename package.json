@@ -1,0 +1,35 @@
+{
+  "name": "angular2-todo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "@angular/upgrade": "*",
+
+    "core-js": "*",
+    "reflect-metadata": "*",
+    "rxjs": "*",
+    "systemjs": "*",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "concurrently": "*",
+    "lite-server": "*",
+    "typescript": "*",
+
+    "@types/core-js": "*",
+    "@types/node": "*"
+  }
+}
