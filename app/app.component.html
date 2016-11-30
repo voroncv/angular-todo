@@ -4,7 +4,7 @@
 	</header>
 
 	<main>
-		<h1>Total of tasks: {{ todos.length }}</h1>
+		<h2>Total of tasks: {{ todos.length }}</h2>
 		<section class="todo-list" *ngIf="todos.length">
 			<div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed">
 
