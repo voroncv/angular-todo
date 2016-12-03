@@ -4,7 +4,13 @@
 	</header>
 
 	<main>
-		<h2>Total of tasks: {{ todos.length }}</h2>
+		<h1>Total of tasks: {{ todos.length }}</h1>
+
+		<form class="todo-form" (ngSubmit)="create(); todoForm.reset()" #todoForm="ngForm">
+			<input type="text" name="title" [(ngModel)]="newTodoTitle" placeholder="What is task?" required>
+			<button type="submit" [disabled]="todoForm.form.invalid">Add</button>
+		</form>
+
 		<section class="todo-list" *ngIf="todos.length">
 			<div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed">
 
